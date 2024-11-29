@@ -1,0 +1,8 @@
+name=AtmosphericIQ Boards
+version=1.0.0
+
+# Run custom prebuild and postbuild scripts from the sketch directory
+recipe.hooks.prebuild.2.pattern="{runtime.platform.path}/scripts/prebuild.sh" "{build.path}" "{build.source.path}" "{runtime.platform.path}" "{build.project_name}"
+recipe.hooks.prebuild.2.pattern.windows="{runtime.tools.STM32Tools.path}/win/busybox.exe" sh "{runtime.platform.path}/scripts/prebuild.sh" "{build.path}" "{build.source.path}" "{runtime.platform.path}" "{build.project_name}"
+recipe.hooks.postbuild.2.pattern="{runtime.platform.path}/scripts/postbuild.sh" "{build.path}" "{build.source.path}" "{runtime.platform.path}" "{build.project_name}"
+recipe.hooks.postbuild.2.pattern.windows="{runtime.tools.STM32Tools.path}/win/busybox.exe" sh "{runtime.platform.path}/scripts/postbuild.sh" "{build.path}" "{build.source.path}" "{runtime.platform.path}" "{build.project_name}"

@@ -1,0 +1,152 @@
+# Copyright (c) 2023 AtmosphericIQ LLC. All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+# See: https://arduino.github.io/arduino-cli/latest/platform-specification/
+
+menu.pnum=Board part number
+
+menu.xserial=U(S)ART support
+menu.usb=USB support (if available)
+menu.xusb=USB speed (if available)
+menu.virtio=Virtual serial support
+
+menu.opt=Optimize
+menu.dbg=Debug symbols and core logs
+menu.rtlib=C Runtime Library
+menu.upload_method=Upload method
+
+################################################################################
+# AtmosphericIQ Boards
+
+AtmosphericIQ.name=AtmosphericIQ Boards
+
+AtmosphericIQ.build.core=STMicroelectronics:arduino
+AtmosphericIQ.build.board=AtmosphericIQ
+AtmosphericIQ.build.variant_h=variant_{build.board}.h
+AtmosphericIQ.build.st_extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial}
+AtmosphericIQ.build.flash_offset=0x0
+AtmosphericIQ.upload.maximum_size=0
+AtmosphericIQ.upload.maximum_data_size=0
+
+# AtmosphericIQ CBOT V9 board
+AtmosphericIQ.menu.pnum.CBOT_V9=CBOT V9
+AtmosphericIQ.menu.pnum.CBOT_V9.upload.maximum_size=1048576
+AtmosphericIQ.menu.pnum.CBOT_V9.upload.maximum_data_size=327680
+AtmosphericIQ.menu.pnum.CBOT_V9.build.mcu=cortex-m4
+AtmosphericIQ.menu.pnum.CBOT_V9.build.fpu=-mfpu=fpv4-sp-d16
+AtmosphericIQ.menu.pnum.CBOT_V9.build.float-abi=-mfloat-abi=hard
+AtmosphericIQ.menu.pnum.CBOT_V9.build.board=CBOT_V9
+AtmosphericIQ.menu.pnum.CBOT_V9.build.series=STM32L4xx
+AtmosphericIQ.menu.pnum.CBOT_V9.build.product_line=STM32L496xx
+AtmosphericIQ.menu.pnum.CBOT_V9.build.variant=CBOT/V9
+AtmosphericIQ.menu.pnum.CBOT_V9.build.peripheral_pins=-DCUSTOM_PERIPHERAL_PINS
+AtmosphericIQ.menu.pnum.CBOT_V9.build.cmsis_lib_gcc=arm_cortexM4lf_math
+AtmosphericIQ.menu.pnum.CBOT_V9.build.vid=0x0483
+AtmosphericIQ.menu.pnum.CBOT_V9.build.pid=0x5740
+
+# AtmosphericIQ CBOT V11 board
+AtmosphericIQ.menu.pnum.CBOT_V11=CBOT V11
+AtmosphericIQ.menu.pnum.CBOT_V11.upload.maximum_size=1048576
+AtmosphericIQ.menu.pnum.CBOT_V11.upload.maximum_data_size=327680
+AtmosphericIQ.menu.pnum.CBOT_V11.build.mcu=cortex-m4
+AtmosphericIQ.menu.pnum.CBOT_V11.build.fpu=-mfpu=fpv4-sp-d16
+AtmosphericIQ.menu.pnum.CBOT_V11.build.float-abi=-mfloat-abi=hard
+AtmosphericIQ.menu.pnum.CBOT_V11.build.board=CBOT_V11
+AtmosphericIQ.menu.pnum.CBOT_V11.build.series=STM32L4xx
+AtmosphericIQ.menu.pnum.CBOT_V11.build.product_line=STM32L496xx
+AtmosphericIQ.menu.pnum.CBOT_V11.build.variant=CBOT/V11
+AtmosphericIQ.menu.pnum.CBOT_V11.build.peripheral_pins=-DCUSTOM_PERIPHERAL_PINS
+AtmosphericIQ.menu.pnum.CBOT_V11.build.cmsis_lib_gcc=arm_cortexM4lf_math
+AtmosphericIQ.menu.pnum.CBOT_V11.build.vid=0x0483
+AtmosphericIQ.menu.pnum.CBOT_V11.build.pid=0x5740
+
+# Upload menu
+AtmosphericIQ.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
+AtmosphericIQ.menu.upload_method.swdMethod.upload.protocol=swd
+AtmosphericIQ.menu.upload_method.swdMethod.upload.options=
+AtmosphericIQ.menu.upload_method.swdMethod.upload.tool=STMicroelectronics:stm32CubeProg
+
+AtmosphericIQ.menu.upload_method.serialMethod=STM32CubeProgrammer (Serial)
+AtmosphericIQ.menu.upload_method.serialMethod.upload.protocol=serial
+AtmosphericIQ.menu.upload_method.serialMethod.upload.options={serial.port.file}
+AtmosphericIQ.menu.upload_method.serialMethod.upload.tool=STMicroelectronics:stm32CubeProg
+
+AtmosphericIQ.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
+AtmosphericIQ.menu.upload_method.dfuMethod.upload.protocol=dfu
+AtmosphericIQ.menu.upload_method.dfuMethod.upload.options=
+AtmosphericIQ.menu.upload_method.dfuMethod.upload.tool=STMicroelectronics:stm32CubeProg
+
+# Serialx activation
+AtmosphericIQ.menu.xserial.generic=Enabled (generic 'Serial')
+AtmosphericIQ.menu.xserial.none=Enabled (no generic 'Serial')
+AtmosphericIQ.menu.xserial.none.build.xSerial=-DHAL_UART_MODULE_ENABLED -DHWSERIAL_NONE
+AtmosphericIQ.menu.xserial.disabled=Disabled (no Serial support)
+AtmosphericIQ.menu.xserial.disabled.build.xSerial=
+
+# USB connectivity
+AtmosphericIQ.menu.usb.none=None
+AtmosphericIQ.menu.usb.CDCgen=CDC (generic 'Serial' supersede U(S)ART)
+AtmosphericIQ.menu.usb.CDCgen.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
+AtmosphericIQ.menu.usb.CDC=CDC (no generic 'Serial')
+AtmosphericIQ.menu.usb.CDC.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC -DDISABLE_GENERIC_SERIALUSB
+AtmosphericIQ.menu.usb.HID=HID (keyboard and mouse)
+AtmosphericIQ.menu.usb.HID.build.enable_usb={build.usb_flags} -DUSBD_USE_HID_COMPOSITE
+AtmosphericIQ.menu.xusb.FS=Low/Full Speed
+AtmosphericIQ.menu.xusb.HS=High Speed
+AtmosphericIQ.menu.xusb.HS.build.usb_speed=-DUSE_USB_HS
+AtmosphericIQ.menu.xusb.HSFS=High Speed in Full Speed mode
+AtmosphericIQ.menu.xusb.HSFS.build.usb_speed=-DUSE_USB_HS -DUSE_USB_HS_IN_FS
+
+# Optimizations
+AtmosphericIQ.menu.opt.osstd=Smallest (-Os default)
+AtmosphericIQ.menu.opt.oslto=Smallest (-Os) with LTO
+AtmosphericIQ.menu.opt.oslto.build.flags.optimize=-Os -flto
+AtmosphericIQ.menu.opt.o1std=Fast (-O1)
+AtmosphericIQ.menu.opt.o1std.build.flags.optimize=-O1
+AtmosphericIQ.menu.opt.o1lto=Fast (-O1) with LTO
+AtmosphericIQ.menu.opt.o1lto.build.flags.optimize=-O1 -flto
+AtmosphericIQ.menu.opt.o2std=Faster (-O2)
+AtmosphericIQ.menu.opt.o2std.build.flags.optimize=-O2
+AtmosphericIQ.menu.opt.o2lto=Faster (-O2) with LTO
+AtmosphericIQ.menu.opt.o2lto.build.flags.optimize=-O2 -flto
+AtmosphericIQ.menu.opt.o3std=Fastest (-O3)
+AtmosphericIQ.menu.opt.o3std.build.flags.optimize=-O3
+AtmosphericIQ.menu.opt.o3lto=Fastest (-O3) with LTO
+AtmosphericIQ.menu.opt.o3lto.build.flags.optimize=-O3 -flto
+AtmosphericIQ.menu.opt.ogstd=Debug (-Og)
+AtmosphericIQ.menu.opt.ogstd.build.flags.optimize=-Og
+AtmosphericIQ.menu.opt.o0std=No Optimization (-O0)
+AtmosphericIQ.menu.opt.o0std.build.flags.optimize=-O0
+
+# Debug information
+AtmosphericIQ.menu.dbg.none=None
+AtmosphericIQ.menu.dbg.enable_sym=Symbols Enabled (-g)
+AtmosphericIQ.menu.dbg.enable_sym.build.flags.debug=-g -DNDEBUG
+AtmosphericIQ.menu.dbg.enable_log=Core logs Enabled
+AtmosphericIQ.menu.dbg.enable_log.build.flags.debug=
+AtmosphericIQ.menu.dbg.enable_all=Core Logs and Symbols Enabled (-g)
+AtmosphericIQ.menu.dbg.enable_all.build.flags.debug=-g
+
+# C Runtime Library
+AtmosphericIQ.menu.rtlib.nano=Newlib Nano (default)
+AtmosphericIQ.menu.rtlib.nanofp=Newlib Nano + Float Printf
+AtmosphericIQ.menu.rtlib.nanofp.build.flags.ldspecs=--specs=nano.specs -u _printf_float
+AtmosphericIQ.menu.rtlib.nanofs=Newlib Nano + Float Scanf
+AtmosphericIQ.menu.rtlib.nanofs.build.flags.ldspecs=--specs=nano.specs -u _scanf_float
+AtmosphericIQ.menu.rtlib.nanofps=Newlib Nano + Float Printf/Scanf
+AtmosphericIQ.menu.rtlib.nanofps.build.flags.ldspecs=--specs=nano.specs -u _printf_float -u _scanf_float
+AtmosphericIQ.menu.rtlib.full=Newlib Standard
+AtmosphericIQ.menu.rtlib.full.build.flags.ldspecs=
