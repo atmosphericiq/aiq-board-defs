@@ -28,7 +28,8 @@ For full instructions on using the "**Boards Manager**", see the [Getting Starte
 
 | Status | Device(s) | Name | Core Release | Notes |
 | :----: | :-------: | ---- | :-----: | :---- |
-| :green_heart: | STM32L496RG | CBOT L496 | *2.7.1* |  |
+| :green_heart: | STM32L496RG | CBOT L496 V9 | *2.7.1* |  |
+| :green_heart: | STM32L496RG | CBOT L496 V11 | *2.7.1* |  |
 
 ### Changelog
 

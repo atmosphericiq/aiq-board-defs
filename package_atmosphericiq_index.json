@@ -1,0 +1,32 @@
+{
+  "packages": [
+    {
+      "name": "atmosphericiq",
+      "maintainer": "Atmospheric IQ",
+      "websiteURL": "https://github.com/atmosphericiq/AtmosphericIQ-Boards",
+      "email": "thayden@engineeringdirector.com",
+      "platforms": [
+        {
+          "name": "cbot",  
+          "architecture": "stm32", 
+          "version": "2.7.1", 
+          "category": "Atmospheric IQ",
+          "url": "https://github.com/atmosphericiq/AtmosphericIQ-Boards/releases/download/v1.0.0/AtmosphericIQ-Boards-v1.0.0.zip",  
+          "archiveFileName": "AtmosphericIQ-Boards-v1.0.0.zip", 
+          "checksum": "SHA-256:...", 
+          "size": "...", 
+          "boards": [
+            {
+              "name": "CBOT V9"
+            },
+            {
+              "name": "CBOT V11"
+            }
+          ],
+          "toolsDependencies": []
+        }
+      ],
+      "tools": []
+    }
+  ]
+}
