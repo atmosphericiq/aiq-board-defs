@@ -11,10 +11,10 @@
           "architecture": "stm32", 
           "version": "2.7.1", 
           "category": "Atmospheric IQ",
-          "url": "https://github.com/atmosphericiq/AtmosphericIQ-Boards/releases/download/v1.0.0/AtmosphericIQ-Boards-v1.0.0.zip",  
+          "url": "https://github.com/atmosphericiq/aiq-board-defs/archive/refs/tags/v1.0.0.zip",
           "archiveFileName": "AtmosphericIQ-Boards-v1.0.0.zip", 
-          "checksum": "SHA-256:...", 
-          "size": "...", 
+          "checksum": "328fcd7a9b3eca5893c3a385cac629ae942eb5afeef353dcd1acc7102e09a155",
+          "size": "24638", 
           "boards": [
             {
               "name": "CBOT V9"
