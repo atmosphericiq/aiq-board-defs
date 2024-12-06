@@ -3,7 +3,7 @@
     {
       "name": "atmosphericiq",
       "maintainer": "Atmospheric IQ",
-      "websiteURL": "https://github.com/atmosphericiq/AtmosphericIQ-Boards",
+      "websiteURL": "https://github.com/atmosphericiq/aiq-board-defs",
       "email": "thayden@engineeringdirector.com",
       "platforms": [
         {
