@@ -17,10 +17,10 @@
           "size": "24638", 
           "boards": [
             {
-              "name": "CBOT V9"
+              "name": "CBOT_V9"
             },
             {
-              "name": "CBOT V11"
+              "name": "CBOT_V11"
             }
           ],
           "toolsDependencies": [
