@@ -72,7 +72,7 @@
               "size": "2365397"
             },
             {
-              "host": "x86_64-pc-linux-gnu",
+              "host": "x86_64-linux-gnu",
               "url": "https://github.com/stm32duino/ArduinoModule-CMSIS/releases/download/5.9.0/CMSIS-5.9.0.tar.bz2",
               "archiveFileName": "CMSIS-5.9.0.tar.bz2",
               "checksum": "SHA-256:693aabf1a793512316bfc9809203a5cfe304931e981ba708b51419939c3cefcd",
@@ -113,7 +113,7 @@
               "size": "103690"
             },
             {
-              "host": "x86_64-pc-linux-gnu",
+              "host": "x86_64-linux-gnu",
               "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.3/STM32Tools-2.2.3-linux.tar.bz2",
               "archiveFileName": "STM32Tools-2.2.3-linux.tar.bz2",
               "checksum": "SHA-256:edd142d2caade2265059f83e79505b06f9378b720393640a30e99f77d8e0555b",
@@ -161,7 +161,7 @@
               "size": "2328409"
             },
             {
-              "host": "x86_64-pc-linux-gnu",
+              "host": "x86_64-linux-gnu",
               "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-3/xpack-openocd-0.12.0-3-linux-x64.tar.gz",
               "archiveFileName": "xpack-openocd-0.12.0-3-linux-x64.tar.gz",
               "checksum": "SHA-256:98c07aa34c6e02ac6ef0794494bc3bd9e2409d587723c5191ee4f0a4d179e39b",
@@ -202,7 +202,7 @@
               "size": "2292519"
             },
             {
-              "host": "x86_64-pc-linux-gnu",
+              "host": "x86_64-linux-gnu",
               "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-1/xpack-openocd-0.12.0-1-linux-x64.tar.gz",
               "archiveFileName": "xpack-openocd-0.12.0-1-linux-x64.tar.gz",
               "checksum": "SHA-256:940f22eccddb0946b69149d227948f77d5917a2c5f1ab68e5d84d614c2ceed20",
@@ -229,7 +229,7 @@
               "size": "148793"
             },
             {
-              "host": "x86_64-pc-linux-gnu",
+              "host": "x86_64-linux-gnu",
               "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.1/STM32Tools-2.2.1-linux.tar.bz2",
               "archiveFileName": "STM32Tools-2.2.1-linux.tar.bz2",
               "checksum": "SHA-256:5b291f2b6384270fe84e4a47838a2b561351459d68331f40c08930a462ced174",
@@ -263,7 +263,7 @@
               "size": "148793"
             },
             {
-              "host": "x86_64-pc-linux-gnu",
+              "host": "x86_64-linux-gnu",
               "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.1/STM32Tools-2.2.1-linux.tar.bz2",
               "archiveFileName": "STM32Tools-2.2.1-linux.tar.bz2",
               "checksum": "SHA-256:5b291f2b6384270fe84e4a47838a2b561351459d68331f40c08930a462ced174",
@@ -312,7 +312,7 @@
               "size": "12998735"
             },
             {
-              "host": "x86_64-pc-linux-gnu",
+              "host": "x86_64-linux-gnu",
               "url": "https://github.com/stm32duino/stm32_svd/releases/download/1.15.1/STM32_SVD-1.15.1.tar.bz2",
               "archiveFileName": "STM32_SVD-1.15.1.tar.bz2",
               "checksum": "SHA-256:f37b918e7ea2dbc818492a07ba35b8b3d287d4473794a383e876656b442b5fcc",
@@ -353,7 +353,7 @@
               "size": "173440158"
             },
             {
-              "host": "x86_64-pc-linux-gnu",
+              "host": "x86_64-linux-gnu",
               "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v10.3.1-2.3/xpack-arm-none-eabi-gcc-10.3.1-2.3-linux-x64.tar.gz",
               "archiveFileName": "xpack-arm-none-eabi-gcc-10.3.1-2.3-linux-x64.tar.gz",
               "checksum": "SHA-256:559dcf1c2dfddac513110fe23da0ef254032c09967eaa901f075515d51818719",
@@ -402,7 +402,7 @@
               "size": "262217286"
             },
             {
-              "host": "x86_64-pc-linux-gnu",
+              "host": "x86_64-linux-gnu",
               "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-x64.tar.gz",
               "archiveFileName": "xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-x64.tar.gz",
               "checksum": "SHA-256:1252a8cafe9237de27a765376697230368eec21db44dc3f1edeb8d838dabd530",
