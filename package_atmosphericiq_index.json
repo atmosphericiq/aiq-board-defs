@@ -9,7 +9,7 @@
         {
           "name": "cbot",  
           "architecture": "stm32", 
-          "version": "2.8.1", 
+          "version": "1.0.0", 
           "category": "Atmospheric IQ",
           "url": "https://github.com/atmosphericiq/aiq-board-defs/archive/refs/tags/v1.0.0.zip",
           "archiveFileName": "v1.0.0.zip", 
