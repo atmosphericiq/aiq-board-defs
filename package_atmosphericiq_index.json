@@ -31,8 +31,7 @@
           ]
         }
       ],
-      "tools": [
-                {
+      "tools": [{
           "name": "xpack-arm-none-eabi-gcc",
           "version": "13.2.1-1.1",
           "systems":
@@ -46,6 +45,7 @@
             }
           ]
         }
+      ]
     }
   ]
 }
