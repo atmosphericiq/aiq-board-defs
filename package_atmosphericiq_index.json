@@ -10,7 +10,7 @@
           "name": "cbot",  
           "architecture": "stm32", 
           "version": "1.0.0", 
-          "category": "Contributed",
+          "category": "Contributed_",
           "url": "https://github.com/atmosphericiq/aiq-board-defs/archive/refs/tags/v1.0.0.zip",
           "archiveFileName": "v1.0.0.zip", 
           "checksum": "SHA-256:328fcd7a9b3eca5893c3a385cac629ae942eb5afeef353dcd1acc7102e09a155",
