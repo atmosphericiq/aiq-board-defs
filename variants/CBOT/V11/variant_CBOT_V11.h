@@ -56,9 +56,9 @@
 
 #define PB3                     26  // SWO
 
-#define PB4                     27  // HAT_IO1 (SARA_RTS)
-#define PB5                     28  // HAT_IO2 (SARA_CTS)
-#define PB7                     29  // HAT_IO3 (SARA_VCCIO)
+#define PB4                     27  // SARA_RTS
+#define PB5                     28  // SARA_CTS
+#define PB7                     29  // SARA_VCCIO
 
 #define PB6                     30  // Button_LED
 
@@ -162,6 +162,12 @@
 // UART Definitions
 #ifndef SERIAL_UART_INSTANCE
   #define SERIAL_UART_INSTANCE  5
+#endif
+
+// pin swap on V11 boards 
+// turn this off for V12 or above
+#ifndef UART_ADVFEATURE_SWAP_INIT
+  #define UART_ADVFEATURE_SWAP_INIT 1
 #endif
 
 // Default pin used for generic 'Serial' instance
