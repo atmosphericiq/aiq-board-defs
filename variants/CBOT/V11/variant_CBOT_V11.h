@@ -164,12 +164,6 @@
   #define SERIAL_UART_INSTANCE  5
 #endif
 
-// pin swap on V11 boards 
-// turn this off for V12 or above
-#ifndef UART_ADVFEATURE_SWAP_INIT
-  #define UART_ADVFEATURE_SWAP_INIT 1
-#endif
-
 // Default pin used for generic 'Serial' instance
 // Mandatory for Firmata
 #ifndef PIN_SERIAL_RX
