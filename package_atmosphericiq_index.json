@@ -97,8 +97,8 @@
           "category": "Contributed",
           "url": "https://github.com/atmosphericiq/aiq-board-defs/archive/refs/tags/v1.0.3.zip",
           "archiveFileName": "v1.0.3.zip",
-          "checksum": "SHA-256:d0deab5cb1d65b57d0b9400b07f1647da9dbf52aa0bf84b977eafb354c7e24b3",
-          "size": "25089",
+          "checksum": "SHA-256:e6501da06f8704cdd3b193f513f3b70a3edd3e76ba568267ea421386cdf6bd60",
+          "size": "25087",
           "boards": [
             {
               "name": "CBOT_V9"
