@@ -72,19 +72,20 @@ WEAK void SystemClock_Config(void)
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {};
   RCC_PeriphCLKInitTypeDef PeriphClkInit = {};
 
-    /* Configure the main internal regulator output voltage */
+  /* Configure the main internal regulator output voltage */
   if (HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE2) != HAL_OK) {
     Error_Handler();
   }
 
-  /* Configure LSE Drive Capability */
+  // configures the external low speed oscillator (LSE)
+  // used for the RTC 
   HAL_PWR_EnableBkUpAccess();
   __HAL_RCC_LSEDRIVE_CONFIG(RCC_LSEDRIVE_LOW);
 
-  /*
-   * Initializes the RCC Oscillators according to the specified parameters
-   * in the RCC_OscInitTypeDef structure.
-   */
+  // enables the HS and LS external oscillators
+  // #define HSE_VALUE               8000000
+  // #define LSE_VALUE               32768
+  // the internal ones are defined in the board config
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI48 | RCC_OSCILLATORTYPE_HSE
                                      | RCC_OSCILLATORTYPE_LSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
