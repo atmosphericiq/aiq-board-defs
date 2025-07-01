@@ -37,10 +37,10 @@ const PinName digitalPin[] = {
   PA_13,  // SWDIO
   PA_14,  // SWCLK
   PA_15,  // DONE (TPL5110 power timer)
-  PC_10,  // HAT_EN  (SARA_ON)
-  PC_11,  // HAT_RST (SARA_RESET)
-  PC_12,  // HAT_TXD (SARA_TXD)
-  PD_2,   // HAT_RXD (SARA_RXD)
+  PA_3,   // HAT_EN  (SARA_ON)
+  PA_2,   // HAT_RST (SARA_RESET)
+  PA_0,   // HAT_TXD (SARA_TXD)
+  PA_1,   // HAT_RXD (SARA_RXD)
   PB_3,   // SWO
   PB_4,   // HAT_IO1 (SARA_RTS)
   PB_5,   // HAT_IO2 (SARA_CTS)

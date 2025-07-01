@@ -193,10 +193,10 @@ WEAK const PinMap PinMap_OSPI_DQS[] = {
 //*** USB ***
 
 #ifdef HAL_PCD_MODULE_ENABLED
-WEAK const PinMap PinMap_USB_OTG_FS[] = {
-  {PA_11,      USB_OTG_FS, STM_PIN_DATA(STM_MODE_AF_PP, GPIO_NOPULL, GPIO_AF10_OTG_FS)}, // USB_OTG_FS_DM
-  {PA_12,      USB_OTG_FS, STM_PIN_DATA(STM_MODE_AF_PP, GPIO_NOPULL, GPIO_AF10_OTG_FS)}, // USB_OTG_FS_DP
-  {NC,         NP,         0}
+WEAK const PinMap PinMap_USB[] = {
+  {PA_11,      USB, STM_PIN_DATA(STM_MODE_AF_PP, GPIO_NOPULL, GPIO_AF10_USB)}, // USB_DM
+  {PA_12,      USB, STM_PIN_DATA(STM_MODE_AF_PP, GPIO_NOPULL, GPIO_AF10_USB)}, // USB_DP
+  {NC,         NP,  0}
 };
 #endif
 

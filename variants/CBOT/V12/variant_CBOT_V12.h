@@ -49,10 +49,10 @@
 
 #define PA15                    21  // DONE (TPL5110 power timer)
 
-#define PC10                    22  // HAT_EN  (SARA_ON)
-#define PC11                    23  // HAT_RST (SARA_RESET)
-#define PC12                    24  // HAT_TXD (SARA_TXD)
-#define PD2                     25  // HAT_RXD (SARA_RXD)
+#define PA3                     22  // HAT_EN  (SARA_ON)
+#define PA2                     23  // HAT_RST (SARA_RESET)
+#define PA0                     24  // HAT_TXD (SARA_TXD)
+#define PA1                     25  // HAT_RXD (SARA_RXD)
 
 #define PB3                     26  // SWO
 
