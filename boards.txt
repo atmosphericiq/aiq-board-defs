@@ -55,6 +55,22 @@ AtmosphericIQ.menu.pnum.CBOT_V11.build.cmsis_lib_gcc=arm_cortexM4lf_math
 AtmosphericIQ.menu.pnum.CBOT_V11.build.vid=0x0483
 AtmosphericIQ.menu.pnum.CBOT_V11.build.pid=0x5740
 
+# AtmosphericIQ CBOT V12 board (STM32L562RET6Q)
+AtmosphericIQ.menu.pnum.CBOT_V12=CBOT V12
+AtmosphericIQ.menu.pnum.CBOT_V12.upload.maximum_size=524288
+AtmosphericIQ.menu.pnum.CBOT_V12.upload.maximum_data_size=262144
+AtmosphericIQ.menu.pnum.CBOT_V12.build.mcu=cortex-m33
+AtmosphericIQ.menu.pnum.CBOT_V12.build.fpu=-mfpu=fpv5-sp-d16
+AtmosphericIQ.menu.pnum.CBOT_V12.build.float-abi=-mfloat-abi=hard
+AtmosphericIQ.menu.pnum.CBOT_V12.build.board=CBOT_V12
+AtmosphericIQ.menu.pnum.CBOT_V12.build.series=STM32L5xx
+AtmosphericIQ.menu.pnum.CBOT_V12.build.product_line=STM32L562xx
+AtmosphericIQ.menu.pnum.CBOT_V12.build.variant=CBOT/V12
+AtmosphericIQ.menu.pnum.CBOT_V12.build.peripheral_pins=-DCUSTOM_PERIPHERAL_PINS
+AtmosphericIQ.menu.pnum.CBOT_V12.build.cmsis_lib_gcc=arm_cortexM33l_math
+AtmosphericIQ.menu.pnum.CBOT_V12.build.vid=0x0483
+AtmosphericIQ.menu.pnum.CBOT_V12.build.pid=0x5740
+
 # Upload menu
 AtmosphericIQ.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
 AtmosphericIQ.menu.upload_method.swdMethod.upload.protocol=swd

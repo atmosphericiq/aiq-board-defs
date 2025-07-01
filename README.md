@@ -10,6 +10,7 @@ This repo adds the support of Atmospheric IQ boards based on STM32 MCU in Arduin
 | :----: | :-------: | ---- | :-----: | :---- |
 | :green_heart: | STM32L496RG | CBOT L496 V9 | *2.8.1* |  |
 | :green_heart: | STM32L496RG | CBOT L496 V11 | *2.8.1* |  |
+| :green_heart: | STM32L562RET6Q | CBOT L562 V12 | *2.8.1* | L5 series with OTA support |
 
 ## How to install
 
