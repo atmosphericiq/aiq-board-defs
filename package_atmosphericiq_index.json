@@ -7,14 +7,14 @@
       "email": "thayden@engineeringdirector.com",
       "platforms": [
         {
-          "name": "AtmosphericIQ CBOT Boards",  
-          "architecture": "stm32", 
-          "version": "1.0.0", 
+          "name": "AtmosphericIQ CBOT Boards",
+          "architecture": "stm32",
+          "version": "1.0.0",
           "category": "Contributed",
           "url": "https://github.com/atmosphericiq/aiq-board-defs/archive/refs/tags/v1.0.0.zip",
-          "archiveFileName": "v1.0.0.zip", 
+          "archiveFileName": "v1.0.0.zip",
           "checksum": "SHA-256:328fcd7a9b3eca5893c3a385cac629ae942eb5afeef353dcd1acc7102e09a155",
-          "size": "24638", 
+          "size": "24638",
           "boards": [
             {
               "name": "CBOT_V9"
@@ -24,17 +24,19 @@
             }
           ],
           "toolsDependencies": [
-             {
+            {
               "packager": "atmosphericiq",
               "name": "xpack-arm-none-eabi-gcc",
               "version": "13.2.1-1.1"
-            },{
+            },
+            {
               "packager": "atmosphericiq",
               "name": "STM32Tools",
               "version": "2.2.4"
             }
           ]
-        },{
+        },
+        {
           "name": "AtmosphericIQ CBOT Boards",
           "architecture": "stm32",
           "version": "1.0.1",
@@ -52,17 +54,19 @@
             }
           ],
           "toolsDependencies": [
-             {
+            {
               "packager": "atmosphericiq",
               "name": "xpack-arm-none-eabi-gcc",
               "version": "13.2.1-1.1"
-            },{
+            },
+            {
               "packager": "atmosphericiq",
               "name": "STM32Tools",
               "version": "2.2.4"
             }
           ]
-        }, {
+        },
+        {
           "name": "AtmosphericIQ CBOT Boards",
           "architecture": "stm32",
           "version": "1.0.2",
@@ -80,17 +84,19 @@
             }
           ],
           "toolsDependencies": [
-             {
+            {
               "packager": "atmosphericiq",
               "name": "xpack-arm-none-eabi-gcc",
               "version": "13.2.1-1.1"
-            },{
+            },
+            {
               "packager": "atmosphericiq",
               "name": "STM32Tools",
               "version": "2.2.4"
             }
           ]
-        }, {
+        },
+        {
           "name": "AtmosphericIQ CBOT Boards",
           "architecture": "stm32",
           "version": "1.0.3",
@@ -108,25 +114,27 @@
             }
           ],
           "toolsDependencies": [
-             {
+            {
               "packager": "atmosphericiq",
               "name": "xpack-arm-none-eabi-gcc",
               "version": "13.2.1-1.1"
-            },{
+            },
+            {
               "packager": "atmosphericiq",
               "name": "STM32Tools",
               "version": "2.2.4"
             }
           ]
-        }, {
+        },
+        {
           "name": "AtmosphericIQ CBOT Boards",
           "architecture": "stm32",
           "version": "1.0.4",
           "category": "Contributed",
           "url": "https://github.com/atmosphericiq/aiq-board-defs/archive/refs/tags/v1.0.4.zip",
           "archiveFileName": "v1.0.4.zip",
-          "checksum": "SHA-256:PLACEHOLDER_CHECKSUM_FOR_V1_0_4",
-          "size": "00000",
+          "checksum": "SHA-256:1d5925cc354fcc70c12101ea46a52effa77aec18e2aa35ce310d3504c298ce93",
+          "size": "37072",
           "boards": [
             {
               "name": "CBOT_V9"
@@ -139,11 +147,12 @@
             }
           ],
           "toolsDependencies": [
-             {
+            {
               "packager": "atmosphericiq",
               "name": "xpack-arm-none-eabi-gcc",
               "version": "13.2.1-1.1"
-            },{
+            },
+            {
               "packager": "atmosphericiq",
               "name": "STM32Tools",
               "version": "2.2.4"
@@ -151,11 +160,11 @@
           ]
         }
       ],
-      "tools": [{
+      "tools": [
+        {
           "name": "xpack-arm-none-eabi-gcc",
           "version": "13.2.1-1.1",
-          "systems":
-          [
+          "systems": [
             {
               "host": "arm-linux-gnueabihf",
               "url": "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v13.2.1-1.1/xpack-arm-none-eabi-gcc-13.2.1-1.1-linux-arm.tar.gz",
@@ -192,11 +201,11 @@
               "size": "268158135"
             }
           ]
-        },        {
+        },
+        {
           "name": "STM32Tools",
           "version": "2.2.4",
-          "systems":
-          [
+          "systems": [
             {
               "host": "i686-mingw32",
               "url": "https://github.com/stm32duino/Arduino_Tools/releases/download/2.2.4/STM32Tools-2.2.4-windows.tar.bz2",
@@ -226,7 +235,8 @@
               "size": "157477"
             }
           ]
-        }]
+        }
+      ]
     }
   ]
 }
