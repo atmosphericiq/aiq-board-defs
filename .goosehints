@@ -1,0 +1,25 @@
+# This .goosehints file describes the aiq-board-defs project.
+
+## Project Description
+This repository contains board definitions for Atmospheric IQ's CBOT (Corrosion Sensing Sensor) devices, designed for use with the Arduino IDE and arduino-cli. It defines hardware specifications and build configurations for different versions of the CBOT board.
+
+## Key Files:
+- `boards.txt`: Defines the various CBOT board versions (V9, V11, V12) with their specific build parameters, MCU (Microcontroller Unit) details (e.g., STM32L496RG for V9/V11, STM32L562RET6Q for V12), FPU (Floating-Point Unit) settings, and upload methods (SWD, Serial, DFU). CBOT V12 is noted as the most current version and includes OTA (Over-The-Air) support.
+- `package_atmosphericiq_index.json`: This JSON file serves as the index for the Arduino Board Manager. It specifies platform details, available versions of the board definitions, download URLs, SHA-256 checksums, and tool dependencies like `xpack-arm-none-eabi-gcc` (ARM GCC compiler) and `STM32Tools` for different operating systems.
+- `platform.txt`: Contains core settings and configurations for the Arduino platform, including general build rules and hooks.
+- `README.md`: Provides an overview of the project, installation instructions for adding the board definitions to `arduino-cli`, and a changelog for different releases.
+
+## Boards:
+The project supports the following CBOT board versions:
+- **CBOT V9**: Based on STM32L496RG.
+- **CBOT V11**: Based on STM32L496RG.
+- **CBOT V12**: Based on STM32L562RET6Q, with specific optimizations for this MCU and noted for its OTA support.
+
+## Usage:
+To use these board definitions with `arduino-cli`, you can update the core index and install the platform using the URLs provided in `package_atmosphericiq_index.json`. The `README.md` provides explicit `arduino-cli` commands for installation and uninstallation.
+
+## Development Environment:
+- **Compiler**: `xpack-arm-none-eabi-gcc`
+- **Tools**: `STM32Tools` (for flashing and programming)
+
+This project is essential for compiling and uploading firmware to the Atmospheric IQ CBOT sensors.
