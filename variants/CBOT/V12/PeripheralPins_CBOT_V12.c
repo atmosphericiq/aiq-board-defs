@@ -49,18 +49,20 @@ WEAK const PinMap PinMap_DAC[] = {
 #endif
 
 //*** I2C ***
-
 #ifdef HAL_I2C_MODULE_ENABLED
 WEAK const PinMap PinMap_I2C_SDA[] = {
   {PB_11,      I2C2, STM_PIN_DATA(STM_MODE_AF_OD, GPIO_NOPULL, GPIO_AF4_I2C2)},
   {NC,         NP,   0}
 };
+#endif
 
+#ifdef HAL_I2C_MODULE_ENABLED
 WEAK const PinMap PinMap_I2C_SCL[] = {
   {PB_10,      I2C2, STM_PIN_DATA(STM_MODE_AF_OD, GPIO_NOPULL, GPIO_AF4_I2C2)},
   {NC,         NP,   0}
 };
 #endif
+
 
 //*** PWM ***
 
@@ -85,14 +87,12 @@ WEAK const PinMap PinMap_PWM[] = {
 
 #ifdef HAL_UART_MODULE_ENABLED
 WEAK const PinMap PinMap_UART_TX[] = {
-  {PA_9,       USART1, STM_PIN_DATA(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF7_USART1)},
-  {PC_12,      UART5,  STM_PIN_DATA(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF8_UART5)},
+  {PA_0,       UART4,  STM_PIN_DATA(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF8_UART4)},
   {NC,         NP,     0}
 };
 
 WEAK const PinMap PinMap_UART_RX[] = {
-  {PA_10,      USART1, STM_PIN_DATA(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF7_USART1)},
-  {PD_2,       UART5,  STM_PIN_DATA(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF8_UART5)},
+  {PA_1,       UART4,  STM_PIN_DATA(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF8_UART4)},
   {NC,         NP,     0}
 };
 

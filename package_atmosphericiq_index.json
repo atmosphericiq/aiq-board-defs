@@ -224,6 +224,39 @@
               "version": "2.2.4"
             }
           ]
+        },
+        {
+          "name": "AtmosphericIQ CBOT Boards",
+          "architecture": "stm32",
+          "version": "1.0.7",
+          "category": "Contributed",
+          "url": "https://github.com/atmosphericiq/aiq-board-defs/archive/refs/tags/v1.0.7.zip",
+          "archiveFileName": "v1.0.7.zip",
+          "checksum": "SHA-256:01869e46dea0bf4c1ece25da5716b924208611c5302ea4e3a352c38becef6b7d",
+          "size": "40148",
+          "boards": [
+            {
+              "name": "CBOT_V9"
+            },
+            {
+              "name": "CBOT_V11"
+            },
+            {
+              "name": "CBOT_V12"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "atmosphericiq",
+              "name": "xpack-arm-none-eabi-gcc",
+              "version": "13.2.1-1.1"
+            },
+            {
+              "packager": "atmosphericiq",
+              "name": "STM32Tools",
+              "version": "2.2.4"
+            }
+          ]
         }
       ],
       "tools": [

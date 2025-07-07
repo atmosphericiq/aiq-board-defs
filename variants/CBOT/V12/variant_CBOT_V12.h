@@ -33,7 +33,7 @@
 
 #define PC6                     10  // USER_LED_GREEN
 #define PC7                     11  // USER_LED_RED
-#define PC8                     12  // USER_LED_BLUE
+#define PB1                     12  // USER_LED_BLUE
 
 #define PC9                     13  // BAT_CH
 #define PA8                     14  // BAT_CON
@@ -56,14 +56,15 @@
 
 #define PB3                     26  // SWO
 
-#define PB4                     27  // SARA_RTS
-#define PB5                     28  // SARA_CTS
-#define PB7                     29  // SARA_VCCIO
+#define PB4                     27  // SARA_RTS / HAT_IO1
+#define PB5                     28  // SARA_CTS / HAT_IO2
+#define PA6                     29  // SARA_VCCIO / HAT_IO3
 
 #define PB6                     30  // Button_LED
 
 #define PB8                     31  // AVCC_EN (AD5941 power)
 #define PB9                     32  // DETECT (AD5941 electrode)
+#define PC2                     33  // HAT_POWER_ON
 
 // Alternate pins number
 #define PA0_ALT1                (PA0  | ALT1)
@@ -115,7 +116,7 @@
 #define PC10_ALT1               (PC10 | ALT1)
 #define PC11_ALT1               (PC11 | ALT1)
 
-#define NUM_DIGITAL_PINS        33
+#define NUM_DIGITAL_PINS        34
 #define NUM_ANALOG_INPUTS       0
 
 // On-board LED pin number
@@ -160,18 +161,18 @@
 #endif
 
 // UART Definitions
-#ifndef SERIAL_UART_INSTANCE
-  #define SERIAL_UART_INSTANCE  5
-#endif
+//#ifndef SERIAL_UART_INSTANCE
+//  #define SERIAL_UART_INSTANCE  4
+//#endif
 
 // Default pin used for generic 'Serial' instance
 // Mandatory for Firmata
-#ifndef PIN_SERIAL_RX
-  #define PIN_SERIAL_RX         PD2
-#endif
-#ifndef PIN_SERIAL_TX
-  #define PIN_SERIAL_TX         PC12
-#endif
+//#ifndef PIN_SERIAL_RX
+//  #define PIN_SERIAL_RX         PA1
+//#endif
+//#ifndef PIN_SERIAL_TX
+//  #define PIN_SERIAL_TX         PA0
+//#endif
 
 // Value of the External oscillator in Hz
 #define HSE_VALUE               8000000U
@@ -210,9 +211,10 @@
     #define SERIAL_PORT_MONITOR   Serial
   #endif
   #ifndef SERIAL_PORT_HARDWARE
-    #define SERIAL_PORT_HARDWARE  Serial5
+    #define SERIAL_PORT_HARDWARE  Serial4
   #endif
   #ifndef SERIAL_PORT_USBVIRTUAL
     #define SERIAL_PORT_USBVIRTUAL  SerialUSB
   #endif
+
 #endif
